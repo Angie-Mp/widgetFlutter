@@ -3,6 +3,8 @@ import 'package:flutter_app/sesion3/inicio.dart';
 import 'package:flutter_app/sesion4/inicio4.dart';
 import 'package:flutter_app/sesion5/columnTarea.dart';
 import 'package:flutter_app/sesion5/scrollwidget.dart';
+import 'package:flutter_app/sesion6/screen/home6screen.dart';
+import 'package:flutter_app/sesion6/tarea/presentacion.dart';
 import 'package:flutter_app/widgetsDemo.dart';
 
 class Menu extends StatelessWidget {
@@ -57,6 +59,26 @@ class Menu extends StatelessWidget {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => ColumnTarea()));
+              },
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            ButtonWidget(
+              text: ('sesion6'),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Home6Screm()));
+              },
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            ButtonWidget(
+              text: ('sesion7-tarea'),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Presentacion()));
               },
             )
           ]),
